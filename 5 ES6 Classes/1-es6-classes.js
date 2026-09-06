@@ -17,7 +17,7 @@ function Programmer(name, preferredLanguage) {
     this.preferredLanguage = preferredLanguage;
 
     this.code = function() {
-        conosole.log(`${this.name} is coding in ${this.preferredLanguage}`);
+        console.log(`${this.name} is coding in ${this.preferredLanguage}`);
     }
 }
 
