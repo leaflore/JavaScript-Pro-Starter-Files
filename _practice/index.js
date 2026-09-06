@@ -113,6 +113,91 @@ console.log(jsProgrammer.toString());
 
 // Iterating Instance Prototype Members
 
+function IteratingProgrammer(name, preferredLanguage) {
+    this.name = name;                           // Example own property
+    this.preferredLanguage = preferredLanguage; // Example own property
+}
 
+const programmer = new IteratingProgrammer(`Steven`, `JavaScript`);
 
+// Example prototype property (.writeCode property that has a function assigned to it)
+IteratingProgrammer.prototype.writeCode = function() {
+    console.log(`${this.name} writes code in ${this.preferredLanguage}`);
+};
+
+programmer.writeCode();
+
+// Enumerating over properties of an object
+for (let key in programmer) {
+    console.log(key); // This will log only the instance properties, not the prototype 
+                      // methods.
+}
+
+console.log(programmer.hasOwnProperty(`name`)); // true
+console.log(programmer.hasOwnProperty(`writeCode`)); // false
+
+// What happens to instances of an object when a prototype method is added?
+
+// Answer:
+
+// When a prototype method is added, all existing instances of the object will have access 
+// to the new method through the prototype chain. This means that even instances created 
+// before the method was added can use it.
+
+// What is the difference between and own property and a prototype property?
+
+// Answer:
+
+// An own property is a property that is directly defined on the instance of an object.
+// A prototype property is a property that is defined on the prototype of the constructor
+// function and is shared among all instances of that constructor.
+
+// -------------------
+
+// Avoid Extending the Built-in Objects
+Array.prototype.shuffle = function() {
+    // Implementation of a shuffle method
+    console.log('shuffle');
+}
+
+const notExtendArray = [];
+notExtendArray.shuffle();
+
+// Note: Extending built-in objects like Array can lead to unexpected behavior and conflicts 
+// with other code. It's generally recommended to avoid doing this in production code.
+
+// Utitliy Function
+
+// Utility functions for array manipulation can be defined separately instead of extending 
+// the built-in Array prototype.
+
+function shuffleArray(array) {
+    // Implementation of a shuffle function
+    console.log('shuffle');
+}
+
+const utilityArray = [];
+const shuffledArray = shuffleArray(utilityArray);
+
+if (typeof Array.prototype.shuffle !== 'function') {
+    console.log('shuffle');
+}
+
+// What is the significance of prototypes and prototypical inheritance in JavaScript?
+
+// Answer:
+
+// Prototypes and prototypical inheritance in JavaScript allow objects to inherit properties 
+// and methods from other objects. This enables code reuse and the creation of hierarchical 
+// relationships between objects. By using prototypes, JavaScript can efficiently share 
+// methods among all instances of a constructor without duplicating them for each instance.
+
+// How do property descripotors manage the behavior of object properties?
+
+// Answer:
+
+// Property descriptors in JavaScript provide detailed information about the attributes of 
+// a property, such as whether it is writable, enumerable, or configurable. They allow 
+// developers to control and customize the behavior of object properties, including 
+// defining getter and setter functions for more advanced property management.
 
