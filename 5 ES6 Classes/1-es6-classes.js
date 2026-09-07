@@ -82,3 +82,32 @@ console.log(typeof ClassProgrammer);
 // -------------------
 
 // Exercise
+
+// Update the following constructor to use ES6 class syntax
+
+function GroceryItem(name, quantity) {
+    this.name = name;
+    this.quantity = quantity;
+
+    this.display = function() {
+        console.log(`${this.name} x ${this.quantity}`);
+    }
+}
+
+const item = new GroceryItem('Apple', 4);
+item.display();
+
+class GroceryItemClass {
+    constructor(name, preferredLanguage) {
+        this.name = name;
+        this.preferredLanguage = preferredLanguage;
+    }
+
+    display() {
+        console.log(`${this.name} x ${this.quantity}`);
+        
+    }
+}
+
+const appleClass = new GroceryItemClass('Apple', 4);
+appleClass.display();
