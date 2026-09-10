@@ -53,6 +53,10 @@ console.log(StaticProgrammer.compareSkill(dev, dev2));
 
 // Static methods are particularly useful for utility functions
 
+
+// -------------------
+
+
 // Active Memory Recall
 
 /* 

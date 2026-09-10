@@ -14,7 +14,7 @@ import TopicResult from '../01_Project/00-Lib.js';
 
 // Lesson
 
-
+// Look in index.js for syntax. Copy to this location if time is available.
 
 
 // Exercise

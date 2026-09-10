@@ -10,4 +10,23 @@
 // -------------------
 
 
-// Lesson
+// Lesson 1 - Private Members using WeakMaps
+
+// WeakMaps provide a truly private mechanism for storing data associated with an object.
+
+// Before class is created
+const _weakMapLanguage = new WeakMap();
+class WeakMapPrivateProgrammer {
+    /**
+     * @param {string} weakMapName
+     * @param {string} weakMapLanguage
+     */
+    constructor(weakMapName, weakMapLanguage) {
+        _weakMapLanguage.set(this, weakMapLanguage);
+    }
+}
+
+const wmProgrammer = new WeakMapPrivateProgrammer('Steven', 'JavaScript');
+console.log(_weakMapLanguage.get(wmProgrammer));
+
+// -------------------
