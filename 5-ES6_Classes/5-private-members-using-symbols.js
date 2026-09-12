@@ -16,7 +16,8 @@ class PrivateMemberProgrammer {
      * @param {string} language
      */
     constructor(name, language) {
-        // Not truly private, just a naming conventions
+        // Not truly private, but a naming convention that indicates the property is 
+        // intended to be private
         this._language = language;
     }
 }
@@ -40,14 +41,23 @@ class ActualPrivateProgrammer {
      */
     constructor(actualPrivateName, actualPrivateLanguage) {
         // More private but still accessible through reflections
+        // Using a symbol (brackets around the variable defined symbol above)makes this 
+        // property less accessible through normal means.
         this[_actualLanguage] = actualPrivateLanguage;
     }
 }
 
 const  apProgrammer = new ActualPrivateProgrammer('Steven', 'JavaScript');
+
+// Logs the symbols used as private properties
 console.log(Object.getOwnPropertySymbols(apProgrammer));
+
+// Retrieves the first symbol used as a private property
 const languageSymbol = Object.getOwnPropertySymbols(apProgrammer)[0];
 
+// Accesses the value of the private property using the symbol
+// JSDoc type assertion for accessing the private property
+// The type assertion allows us to bypass TypeScript-like type checking and access the property directly
 console.log(/** @type {any} */ (apProgrammer)[languageSymbol]);
 
 // Symbols provide a pseudo private mechanism as they are not accessible through normal property
