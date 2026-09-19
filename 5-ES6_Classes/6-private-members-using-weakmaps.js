@@ -28,5 +28,5 @@ class WeakMapPrivateProgrammer {
 
 const wmProgrammer = new WeakMapPrivateProgrammer('Steven', 'JavaScript');
 console.log(_weakMapLanguage.get(wmProgrammer));
-
+ 
 // -------------------

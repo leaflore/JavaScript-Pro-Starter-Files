@@ -31,7 +31,7 @@ theThisProgrammer.code();
 // In a browser, this will typically refer to the `window` object. In a Node.js environment, it will refer to the `global` object.
 
 const detachedCode = theThisProgrammer.code;
-detachedCode();
+detachedCode(); // `this` will be `undefined` in strict mode
 
 class StrictProgrammer {
     /**
@@ -52,7 +52,7 @@ theStrictProgrammer.code();
 
 // Detached code example for StrictProgrammer
 const detachedStrictCode = theStrictProgrammer.code;
-detachedStrictCode(); //
+detachedStrictCode(); // `this` will be `undefined` in strict mode
 
 // Active memory recall
 
