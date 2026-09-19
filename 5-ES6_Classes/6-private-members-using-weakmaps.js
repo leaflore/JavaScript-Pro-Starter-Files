@@ -11,8 +11,8 @@
 
 // Lesson 1
 
-const _language = new WeakMap();
-const _work = new WeakMap();
+const _language = new WeakMap(); // Private storage for language property
+const _work = new WeakMap(); // Private storage for work property
 
 class WeakMapProgrammer {
     /**
@@ -23,8 +23,18 @@ class WeakMapProgrammer {
     constructor(name, language) {
         this.name = name;
 
-        // Store lanuage in WeakMap with 'this' as the key
+        // Store language in WeakMap with 'this' as the key
         _language.set(this, language);
+
+        // Store a private method in a WeakMap with 'this' as the key
+        _work.set(this, () => {
+            console.log(`${this.name} is coding in ${_language.get(this)}`)
+        })
+    }
+
+    code() {
+        // Access and invoke the private method
+        
     }
 }
 
