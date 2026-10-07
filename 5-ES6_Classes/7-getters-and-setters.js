@@ -9,7 +9,10 @@
 
 // -----------------------------------------------------------------------------------------
 // --------------------------- IMPORTANT ---------------------------
-// On 10/04/2026 - I went to the jsconfig.json file not to check for JSDoc and Typescript configuration
+/* On 10/04/2026 - I went to the jsconfig.json file in the project directory and set "checkJs", 
+    "strictNullChecks": false , "strictFunctionTypes": false, and "strict": falseto false to not 
+    check for JSDoc and Typescript configuration. 
+*/
 // --------------------------- END IMPORTANT ---------------------------
 
 // -------------------
