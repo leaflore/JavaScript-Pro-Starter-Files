@@ -3,8 +3,15 @@
 import TopicResult from '../01_Project/00-Lib.js';
 
 // Constructors - Constructor Functions
-
+/**
+ * 
+ * @param {string} name - The name of the programmer
+ * @param {string} preferredLanguage - The preferred programming language of the programmer
+ */
 function Programmer(name, preferredLanguage) {
+    /**
+     * @this {Programmer}
+     */
     this.name = name;
     this.preferredLanguage = preferredLanguage;
     this.writeCode = function() {

@@ -43,6 +43,13 @@ let user = {
 let admin = {
     __proto__: user, // Inherit from user object
     isAdmin: true, // Make is it able to tell if the admin user has admin additional privileges
+    /** 
+     * @this {typeof user} 
+     * */
+    // In JSDoc, the @this tag specifies what the this keyword refers to within a given function. It is primarily used when a function 
+    // is designed to be executed in the context of another object—such as when using .call(), .apply(), .bind(), or inside specific 
+    // event handlers and custom callbacks.
+    
     manageUsers() {
         console.log(`${this.fullName} is managing users`);
     }
