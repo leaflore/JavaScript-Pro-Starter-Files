@@ -7,6 +7,22 @@
 // In this lesson, we will discuss mixins in JavaScript and how they can be used to achieve 
 // composition and code reuse without relying on inheritance.
 
+// Getters and setters are special methods that allow you to define how a property is accessed and modified.
+// A getter allows you to define a method that will be called when a property is accessed.
+// A setter allows you to define a method that will be called when a property is updated.
+
+// Getters and setters are useful for encapsulating the internal state of an object and providing controlled access to it.
+
+/**
+ * Getters and setters in JavaScript classes allow you to define custom behavior when accessing or modifying properties.
+ * They help encapsulate the internal state and provide controlled access to it.
+ * 
+ * In this specific line, the this keyword acts as a unique reference key that identifies the exact object instance currently being created.
+ * Because WeakMap objects only accept objects as keys, _gslanguage.set(this, language) maps that specific instance to its corresponding language value.
+ * 
+ * Using these feautures appropriately, allows you to scale your code with better encapsulation and maintainability.
+ */
+
 // -----------------------------------------------------------------------------------------
 // --------------------------- IMPORTANT ---------------------------
 /* On 10/04/2026 - I went to the jsconfig.json file in the project directory and set "checkJs", 
@@ -133,6 +149,9 @@ console.log(gsProgrammerwithGetterSetter.language);
    gsProgrammerwithGetterSetter.language = "TypeScript"; // Updating the language property using the setter
    ```
 
+   It hides internal implementation details and public interfaces are easy to use.
+
+   They also allow you to add validation or other logic when getting or setting a property.
    ----- END IMPORTANT -----
 
    In summary, getters and setters provide a way to define computed properties and encapsulate the internal state of an 
