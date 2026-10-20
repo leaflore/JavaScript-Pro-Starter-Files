@@ -25,10 +25,12 @@
 
 // -----------------------------------------------------------------------------------------
 // --------------------------- IMPORTANT ---------------------------
+
 /* On 10/04/2026 - I went to the jsconfig.json file in the project directory and set "checkJs", 
     "strictNullChecks": false , "strictFunctionTypes": false, and "strict": falseto false to not 
     check for JSDoc and Typescript configuration. 
 */
+
 // --------------------------- END IMPORTANT ---------------------------
 
 // -------------------
@@ -159,9 +161,35 @@ console.log(gsProgrammerwithGetterSetter.language);
 */
 
 // --------------------------- END IMPORTANT -----------------------
+
 // ----- Active Recall -----
 
-// 1. What are getters and setters in JavaScript classes?
+/** 1. How do ES6 getters and setters enhance the encapsulation and control of property 
+    access within classes?
+
+    Getters and setters allow you to enhance encapsulation and control by allow you to 
+    define methods that get or set property values. This provides a way to provide logic
+    when accessing or modifying properties such as validation or transformation of values
+    while keeping the syntax similar.
+
+    2. What are the benefits of using the get and set keywords in ES6 classses compared to
+    traditional methods for accessing and modifying properties?
+
+    Answer:
+    Using the get and set keywords in ES6 classes provides a more concise and readable syntax
+    for defining property accessors. It allows you to access and modify properties as if 
+    they were regular properties, while still encapsulating the logic for getting and 
+    setting values. This improves code maintainability and readability compared to 
+    traditional methods that require explicit function calls.
+
+    It also allows you to add additional logic, such as validation or transformation, when 
+    setting or getting property values, providing more encapsulation and control over how properties are 
+    accessed and modified. 
+*/
+
 // 2. How do you define a getter method in a class?
 // 3. How do you define a setter method in a class?
 // 4. What are the benefits of using getters and setters?
+// 5. How can you add validation logic when setting a property?
+// 6. What is the advantage of using a WeakMap for private properties in conjunction with getters and setters?
+// 7. What are getters and setters in JavaScript classes?
