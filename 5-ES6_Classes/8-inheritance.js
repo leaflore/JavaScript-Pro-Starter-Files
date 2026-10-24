@@ -11,7 +11,7 @@
 
 // --------------------------- IMPORTANT ---------------------------
 
-class Programmer {
+class InheritanceProgrammer {
     constructor(name) {
         this.name = name;
     }
@@ -22,7 +22,7 @@ class Programmer {
 }
 
 // Inherited class example
-class FrontendProgrammer extends Progammer {
+class FrontendProgrammer extends InheritanceProgrammer {
     constructor(name, tools) {
         // Call the superclass constructor with the name parameter
         super(name);
@@ -43,6 +43,8 @@ class FrontendProgrammer extends Progammer {
 const frontendDev =  new FrontendProgrammer('Steven', 'React');
 frontendDev.code();
 frontendDev.design();
+
+
 
 // --------------------------- END IMPORTANT ---------------------------
 
