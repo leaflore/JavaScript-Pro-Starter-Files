@@ -1,0 +1,16 @@
+// JavaScript Pro - Learn JavaScript Essentials
+
+// ES6 Classes
+
+// 10 - Summary
+
+// 1 - ES6 Classes Overview
+
+/**
+ * ES6 classes provide a more structured and concise way to create objects and handle inheritance in JavaScript.
+ * They introduce the class and extends keywords, making it easier to define constructors, methods, and 
+ * inheritance hierarchies. They also provide a clearer syntax for defining static methods and handling super 
+ * calls in subclasses. They unify the way objects and inheritance are handled, making the code more readable 
+ * and maintainable.
+ * 
+ */
