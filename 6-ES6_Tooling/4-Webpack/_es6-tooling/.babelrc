@@ -1,0 +1,7 @@
+// Babel configuration file
+
+// .babelrc means babel resource configuration
+
+{
+    "presets": ["@babel/preset-env"]
+}
