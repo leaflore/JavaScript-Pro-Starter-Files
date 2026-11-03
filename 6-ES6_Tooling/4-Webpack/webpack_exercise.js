@@ -61,7 +61,45 @@
                     ]
                 }
             }
+ * 3. Create script
+ *      a. Open your package.json file.
+ *      b. Add a build script to run Webpack:
+ *          "scripts": {
+ *              "build": "webpack"
+ *          }
+ *      c. This allows you to run npm run build to bundle your JavaScript files using Webpack.
+ * 
+ * 4. Create an HTML file to include the bundled JavaScript
+ *      a. Create an index.html file in the root of your project.
+ *      b. Include a script tag to load the bundled JavaScript file:
+ *          <script src="./dist/main.js"></script>
+ *      c. This ensures that your bundled JavaScript is included in the HTML file and can be executed in the browser.
+ * 
+ * 5. Run the build script
+ *      a. Open your terminal and navigate to the root of your project.
+ *      b. Run the build script using npm:
+ *          npm run build
+ *      c. This will execute Webpack and generate the bundled JavaScript file in the dist directory.
+ * 
+ * 6. May need to run this script if package dependencies do not have permissions.
+ *      a. chmod +x /Users/brandonkemp/Documents/00-J-Repositories/00-G01-JS-Advcd-Files/JavaScript-Pro-Starter-Files/6-ES6_Tooling/4-Webpack/_es6-tooling/node_modules/.bin/webpack
+ * 
+ *      b. This script changes the file permissions to make the Webpack binary executable on your Mac.
+ * 7. Explanation of the chmod command
+ *      a. Here is the exact breakdown of what each part of the command does:
+ *          • chmod: Short for Change Mode. It is a system command used to change the access permissions of files and folders.
+ *          • +x: This flag stands for +eXecutable. It tells the operating system to grant "execute" permissions to the file, allowing it to run as a program or script.
+ *          • /Users/.../webpack: This is the absolute file path pointing to the specific Webpack binary inside your project's local node_modules folder.
  *
-
+ *      b. Why was it needed?
+ *          When you try to run a command line tool like Webpack, macOS checks if the file has an "executable" flag. If that flag is missing
+ *          (often caused by copy-pasting folders, switching across different operating systems, or npm installation glitches), the system 
+ *          blocks it and throws the "Permission denied" error you saw earlier. Running this script flags the file as safe to run.
+ *
+ *  8. Press Go Live
+ *      a. If you are using a code editor like Visual Studio Code with the Live Server extension, click on the "Go Live" button.
+ *      b. This will start a local development server and open your index.html file in the browser.
+ *      c. You should see your bundled JavaScript being executed in the browser.
+ * 
  */
 // Active Recall
