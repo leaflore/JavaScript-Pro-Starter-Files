@@ -3,7 +3,8 @@ const path = require('path');
 
 // export webpack configuration object
 module.exports = {
-    mode: 'development', // set the mode to development for better debugging
+    mode: 'production', // set the mode to production for optimized output
+    // set the mode to development for better debugging
     entry: './src/index.js', // specify the entry point for the application
     output: {
         path: path.resolve(__dirname, 'dist'), // specify the output directory for the bundled files
