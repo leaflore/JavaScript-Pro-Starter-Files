@@ -103,3 +103,26 @@
  * 
  */
 // Active Recall
+
+// Add Active Recall Questions later
+
+// Summary
+/**
+ * CommonJS 
+ * 
+ *      is a module system used in Node.js where each file is treated as a separate module.
+ * 
+ *      modules use require() to import dependencies and module.exports to export functionality.
+ * 
+ * NodeJS 
+ * 
+ *      uses CommonJS modules to manage dependencies and modularize code.
+ * 
+ * Babel 
+ * 
+ *      is a JavaScript compiler that allows you to use next-generation JavaScript features by transforming them into a version compatible with current browsers.
+ * 
+ * Webpack 
+ * 
+ *      is a module bundler that takes your JavaScript files and their dependencies and bundles them into a single file for the browser.
+ */
