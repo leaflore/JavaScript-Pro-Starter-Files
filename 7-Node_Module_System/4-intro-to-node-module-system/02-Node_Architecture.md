@@ -59,3 +59,28 @@ Node.js also has a rich ecosystem of third-party modules available through the N
 **Community and Ecosystem** - Node.js has a rich ecosystem of modules available through NPM, allowing developers to easily extend functionality and share reusable code.
 
 **Single Language for Frontend and Backend** - With Node.js, developers can use JavaScript for both client-side and server-side development, promoting code reuse and consistency across the application stack.
+
+## Use Cases of Node.js
+**Web Applications** - Node.js is commonly used for building web applications, including real-time applications like chat apps and collaborative tools, due to its non-blocking I/O and event-driven architecture.
+
+**API Development** - Node.js is widely used for building RESTful APIs and GraphQL APIs, enabling efficient communication between client and server applications.
+
+**Microservices** - Node.js is often used to build microservices architectures, where applications are divided into smaller, independent services that can be developed, deployed, and scaled individually.
+
+**Serverless Applications** - Node.js is commonly used in serverless computing environments, such as AWS Lambda, where functions are executed in response to events without the need to manage server infrastructure. This allows for cost-effective and scalable application development.
+
+**Command-Line Tools** - Node.js is also used for building command-line tools and scripts, leveraging its ability to interact with the file system and execute system commands efficiently.
+
+## Limitations of Node.js
+
+**Single-Threaded Nature** - Node.js operates on a single-threaded event loop, which can be a limitation for CPU-intensive tasks, as they can block the event loop and degrade performance.
+
+**Callback Hell** - Although modern JavaScript features like Promises and async/await mitigate this issue, complex asynchronous code can still lead to deeply nested callbacks, making the code harder to maintain.
+
+**Maturity of Libraries** - While Node.js has a rich ecosystem, some libraries may not be as mature or stable as those available for other platforms, requiring careful evaluation before use.
+
+**Not Suitable for Heavy Computation** - Node.js is not ideal for applications that require heavy computation, as it can block the event loop and affect the performance of other concurrent operations.
+
+**Limited Multi-Threading Support** - While Node.js can handle many concurrent connections efficiently, it has limited support for multi-threading compared to other platforms, which can be a drawback for certain types of applications.
+
+**
